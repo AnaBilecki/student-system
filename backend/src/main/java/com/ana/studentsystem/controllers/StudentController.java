@@ -1,5 +1,24 @@
 package com.ana.studentsystem.controllers;
 
-public class StudentController {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+import com.ana.studentsystem.entities.Student;
+import com.ana.studentsystem.services.StudentService;
+
+@RestController
+@RequestMapping(value = "/student")
+public class StudentController {
+	
+	@Autowired
+	private StudentService service;
+	
+	@PostMapping
+	public String insert(@RequestBody Student student) {
+		service.insert(student);
+		return "New student added";
+	}
 }
