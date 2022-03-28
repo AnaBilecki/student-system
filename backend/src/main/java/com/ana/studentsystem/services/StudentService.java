@@ -1,5 +1,7 @@
 package com.ana.studentsystem.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,9 @@ public class StudentService {
 	
 	public Student insert(Student student) {
 		return repository.save(student);
+	}
+	
+	public List<Student> findAll() {
+		return repository.findAll();
 	}
 }
