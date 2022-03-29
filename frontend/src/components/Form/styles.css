@@ -4,7 +4,8 @@
     justify-content: center;
     font-size: 14px;
     color: #A9A9A9;
-    margin-top: 100px;
+    padding-top: 122px;
+    padding-bottom: 121px;
 }
 
 .form-container h1 {
@@ -27,6 +28,7 @@
 .submit-button {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .btn-outline-primary {

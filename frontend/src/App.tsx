@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Form from "components/Form";
 import Navbar from "./components/Navbar";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Navbar />
       <Form />
+      <Footer />
     </div>
   );
 }
