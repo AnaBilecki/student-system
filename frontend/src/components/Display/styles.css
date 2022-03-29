@@ -1,0 +1,30 @@
+.display-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-container h1 {
+    font-family: Fredoka;
+    font-size: 48px;
+    color: #CD5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.table {
+    width: 500px;
+    margin: 0 0 40px 0;
+}
+
+.table-bordered {
+    border-color: black;
+}
+
+.thead-dark {
+    background-color: #CD5C5C;
+    color: #fff;
+}
