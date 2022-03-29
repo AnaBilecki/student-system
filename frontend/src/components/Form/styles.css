@@ -41,3 +41,8 @@
     color: #fff;
     border-color: #CD5C5C;
 }
+
+.form-control:focus {
+    border-color: #cccccc;
+    box-shadow: 0 1px 1px #CD5C5C inset, 0 0 8px #CD5C5C;  
+}

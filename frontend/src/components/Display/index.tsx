@@ -17,7 +17,7 @@ function Display() {
     return (
         <div className="display-container">
             <h1>Students</h1>
-            <table className="table table-striped table-bordered">
+            <table className="table table-bordered">
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">Id</th>
@@ -25,29 +25,7 @@ function Display() {
                         <th scope="col">Country</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ana</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Ana</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Ana</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Ana</td>
-                        <td>Brazil</td>
-                    </tr>
-                </tbody>
-            {/* {students.map(student => (
+            {students.map(student => (
                 <tbody  key={student.id}>
                     <tr>
                         <td>{student.id}</td>
@@ -55,7 +33,7 @@ function Display() {
                         <td>{student.country}</td>
                     </tr>
                 </tbody>
-            ))}  */}
+            ))}
             </table>
         </div>
     );

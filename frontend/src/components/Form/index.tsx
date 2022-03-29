@@ -16,7 +16,7 @@ function Form() {
             body: JSON.stringify(student)
 
         }).then(() => {
-            console.log("New student added")
+            window.location.reload()
         })
     }
 
@@ -26,7 +26,7 @@ function Form() {
                 <h1>Add student</h1>
                 <form>
                     <div className="form-group">
-                        <label>Student Name</label>
+                        <label className="label">Student Name</label>
                         <input type="text" className="form-control" placeholder="Enter student name"
                             value={name}
                             onChange={(e) => setName(e.target.value)} />
