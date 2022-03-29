@@ -1,0 +1,41 @@
+.form-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #A9A9A9;
+    margin-top: 100px;
+}
+
+.form-container h1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-family: Fredoka;
+    font-weight: 700;
+    color: #CD5C5C;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-outline-primary {
+    color: #CD5C5C;
+    border-color: #CD5C5C;
+}
+
+.btn-outline-primary:hover {
+    background-color: #CD5C5C;
+    color: #fff;
+    border-color: #CD5C5C;
+}
