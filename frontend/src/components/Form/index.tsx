@@ -9,7 +9,6 @@ function Form() {
     const handleClick = (e: any) => {
         e.preventDefault()
         const student = { name, country }
-        console.log(student)
         fetch("http://localhost:8080/student", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
