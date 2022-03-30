@@ -6,7 +6,7 @@ function Display() {
     const [students, setStudents] = useState<any[]>([])
 
     useEffect(() => {
-        fetch("http://localhost:8080/student")
+        fetch("http://localhost:8080/students")
             .then(res => res.json())
             .then((result) => {
                 setStudents(result);
