@@ -14,7 +14,7 @@ import com.ana.studentsystem.entities.Student;
 import com.ana.studentsystem.services.StudentService;
 
 @RestController
-@RequestMapping(value = "/student")
+@RequestMapping(value = "/students")
 @CrossOrigin
 public class StudentController {
 	
