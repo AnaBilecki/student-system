@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "utils/requests";
 import './styles.css';
 
 function Display() {
@@ -6,7 +7,7 @@ function Display() {
     const [students, setStudents] = useState<any[]>([])
 
     useEffect(() => {
-        fetch("http://localhost:8080/students")
+        fetch(`${BASE_URL}/students`)
             .then(res => res.json())
             .then((result) => {
                 setStudents(result);

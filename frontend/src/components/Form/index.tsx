@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BASE_URL } from "utils/requests";
 import './styles.css';
 
 function Form() {
@@ -9,7 +10,7 @@ function Form() {
     const handleClick = (e: any) => {
         e.preventDefault()
         const student = { name, country }
-        fetch("http://localhost:8080/students", {
+        fetch(`${BASE_URL}/students`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(student)
